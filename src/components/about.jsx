@@ -12,9 +12,10 @@ export const About = (props) => {
             {" "}<Player
             className="img-responsive"
             playsInline
-            poster="/img/logo.png"
+            poster="/img/rovoo_3.png"
             src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-            /> {" "}
+            > 
+            </Player> {" "}
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">

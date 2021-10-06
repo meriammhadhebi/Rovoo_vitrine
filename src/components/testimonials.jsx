@@ -1,3 +1,4 @@
+import CountUp from 'react-countup';
 export const Testimonials = (props) => {
   return (
     <div id='testimonials'>
@@ -8,18 +9,23 @@ export const Testimonials = (props) => {
         <div className='row'>
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className='col-md-4'>
-                  <div className='testimonial'>
-                    <div className='testimonial-image'>
-                      {' '}
-                      <img src={d.img} alt='' />{' '}
-                    </div>
-                    <div className='testimonial-content'>
-                      <p>"{d.text}"</p>
-                      <div className='testimonial-meta'> - {d.name} </div>
-                    </div>
+                <div key={`${d.name}-${i}`} className='col-md-3'>
+                 <div  >
+  
+            <span className="dot ">
+              <h3 style={{position:'relative', top:'70px',fontSize:'20'}}>{d.title}</h3>
+              <h2> <CountUp end={d.stat} 
+              duration={4} 
+              decimals={1}
+              decimal="."
+              style={{position:'relative', top:'95px'}}/>
+                
+              </h2>
+            </span>
+    
+</div>
                   </div>
-                </div>
+                
               ))
             : 'loading'}
         </div>

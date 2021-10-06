@@ -9,16 +9,18 @@ export const Services = (props) => {
             dapibus leonec.
           </p>
         </div>
-        <div className='row'>
+        <div className='row' style={{position:'relative', left:'90px'}}>
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className='col-md-4'>
+                <div key={`${d.name}-${i}`} className='card col-md-4'>
                   {' '}
-                  <i className={d.icon}></i>
-                  <div className='service-desc'>
-                    <h3>{d.name}</h3>
-                    <p>{d.text}</p>
-                  </div>
+                  <img src='img/rovoo_3.png' alt="Denim Jeans" style={{width:"100%"}} />
+                  
+                    <h1>{d.name}</h1>
+                    <p class="price">{d.price}</p>
+                    <p>{d.text}</p> 
+                    <p><button>Voir plus</button></p>
+                  
                 </div>
               ))
             : 'loading'}

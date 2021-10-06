@@ -1,7 +1,7 @@
 import {Button} from '@material-ui/core';
 export const Navigation = (props) => {
   return (
-    <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
+    <nav  className='navbar  navbar-fixed-top'>
       <div className='container'>
         <div className='navbar-header'>
           <button
@@ -16,10 +16,7 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
-          <a className='navbar-brand page-scroll' href='#page-top'>
-           <img style={{position:'relative',top:'-30px',height:'100px',width:'100px'}} src="img/logo.png" /> 
-           {/* Rovoo */}
-          </a>{' '}
+         
         </div>
 
         <div
@@ -27,42 +24,62 @@ export const Navigation = (props) => {
           id='bs-example-navbar-collapse-1'
         >
           <ul className='nav navbar-nav navbar-right'>
-            {/* <li>
-              <a href='#features' className='page-scroll'>
-                Features
-              </a>
-            </li> */}
             <li>
-              <a href='#about' className='page-scroll'>
-                About
-              </a>
+            <a className='navbar-brand page-scroll' href='#page-top'>
+           <img style={{position:'relative',top:'-50',left:'-390px',height:'130px',width:'135px'}} src="img/rovoo_3.png" /> 
+           {/* Rovoo */}
+          </a>{' '}
+            </li>
+         
+            <li>
+            
+        <a href='#about' >
+          about
+          </a>
+      
             </li>
             <li>
-              <a href='#services' className='page-scroll'>
-                Services
-              </a>
+            
+        <a href='#services' >
+          services
+          </a>
+      
             </li>
             <li>
-              <a href='#portfolio' className='page-scroll'>
-                Reservation
-              </a>
+            
+        <a href='#portfolio' >
+          reservation
+          </a>
+     
             </li>
             <li>
-              <a href='#testimonials' className='page-scroll'>
+            
+              <a href='#testimonials' >
                 Statistic
               </a>
+              
             </li>
             <li>
-              <a href='#team' className='page-scroll'>
+            
+              <a href='#team' >
                 Team
               </a>
+              
             </li>
             <li>
-              <a href='#contact' className='page-scroll'>
+            
+              <a href='#contact' >
                 Contact
               </a>
+              
             </li>
-            <button className="btn" style={{position:'relative',top:'10px'}}>SignIn</button>
+            <li>
+            
+              <a  className='page-scroll'>
+                signin
+              </a>
+              
+            </li>
           </ul>
         </div>
       </div>

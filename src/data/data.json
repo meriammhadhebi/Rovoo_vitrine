@@ -84,24 +84,40 @@
   ],
   "Team": [
     {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
+      "img": "img/team/fares.jpg",
+      "hoverimg": "img/team/giffares.gif",
+      "name": "Mhadhbi Meriam",
       "job": "Director"
     },
     {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
+      "img": "img/team/alaa.jpg",
+      "hoverimg": "img/team/gifalaa.gif",
+      "name": "Benhassen Alaa",
       "job": "Senior Designer"
     },
     {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
+      "img": "img/team/fares.jpg",
+      "hoverimg": "img/team/giffares.gif",
+      "name": "Zayene Iheb",
       "job": "Senior Designer"
     },
     {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
+      "img": "img/team/alaa.jpg",
+      "hoverimg": "img/team/gifalaa.gif",
+      "name": "Zammit Mohamed",
       "job": "Project Manager"
+    },
+    {
+      "img": "img/team/fares.jpg",
+      "hoverimg": "img/team/giffares.gif",
+      "name": "Aissa Fares",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/alaa.jpg",
+      "hoverimg": "img/team/gifalaa.gif",
+      "name": "Laariedh Fahd",
+      "job": "Senior Designer"
     }
   ],
   "Contact": {

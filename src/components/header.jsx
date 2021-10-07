@@ -1,7 +1,9 @@
+import { Navigation } from "./navigation"
 export const Header = (props) => {
   return (
     <header id='header'>
       <div className='intro'>
+        <Navigation/>
         <div className='overlay'>
           <div className='container'>
             <div className='row'>

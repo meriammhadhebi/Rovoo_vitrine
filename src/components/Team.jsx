@@ -1,37 +1,33 @@
-import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, MDBCol } from 'mdb-react-ui-kit';
+
+import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardFooter, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 export const Team = (props) => {
   return (
     <div id='team' className='text-center'>
       <div className='container'>
-        <div className='col-md-8 col-md-offset-2 section-title'>
-          <h2>Meet the Team</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
-          </p>
-        </div>
-        <div id='row'>
-          {props.data
+      
+         
+       
+         {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className='col-md-4 col-sm-6 team'>
-                  <div className='thumbnail' >
-                    {' '}
-                    {/* <img src={d.img} alt='...' className='team-img' /> */}
-                     <img className='team-img'
+              <div className='card col-md-4'>
+         <div className='imgBx'>
+         <img className='team-img'
                         src={d.img}
                         onMouseOver={e => (e.currentTarget.src = d.hoverimg)}
                         onMouseOut={e => (e.currentTarget.src = d.img)}
-                      />
-                    <div className='caption'>
-                      <h4>{d.name}</h4>
-                      <p>{d.job}</p>
-                    </div>
-                  </div>
-                </div>
+                    />
+         </div>
+         <div className='content'>
+           <h3>{d.name}</h3>
+           <p>{d.job}</p>
+         </div >
+         </div> 
+                
               ))
             : 'loading'}
-        </div>
-      </div>
+       
+     
+    </div>
     </div>
   )
 }

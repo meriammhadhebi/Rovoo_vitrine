@@ -3,10 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+import { DashboardMenu } from './components/dashboard_menu';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+    <Switch>
+      <Route exact path="/admin">
+        <DashboardMenu />
+      </Route>
+      <Route exact path="/">
+        <App />
+      </Route>
+      </Switch>
+      </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

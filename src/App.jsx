@@ -12,6 +12,15 @@ import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 
+
+import { DashboardMenu } from "./components/dashboard_menu";
+
+const routes = [
+  {
+    path: "/admin",
+    component: DashboardMenu
+  }];
+
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
@@ -25,13 +34,15 @@ const App = () => {
 
   return (
     <div>
-      <Navigation />
+     
       <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
+      <Testimonials data={landingPageData.Testimonials} />
+      
       <About data={landingPageData.About} />
+      <Features data={landingPageData.Features} />
       <Services data={landingPageData.Services} />
       <Gallery />
-      <Testimonials data={landingPageData.Testimonials} />
+      
       <Team data={landingPageData.Team} />
       <Contact data={landingPageData.Contact} />
     </div>

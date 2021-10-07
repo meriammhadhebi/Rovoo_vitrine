@@ -73,13 +73,7 @@ export const Navigation = (props) => {
               </a>
               
             </li>
-            <li>
             
-              <a  className='page-scroll'>
-                signin
-              </a>
-              
-            </li>
           </ul>
         </div>
       </div>

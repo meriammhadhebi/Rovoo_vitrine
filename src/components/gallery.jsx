@@ -4,7 +4,7 @@ export const Gallery = (props) => {
       <div className='container'>
         <div className='section-title'>
           <h2>Gallery</h2>
-          <p>
+          <p className='parag'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
             dapibus leonec.
           </p>

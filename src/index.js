@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { DashboardMenu } from './components/dashboard_menu';
+import { Dashboard } from './components/dashboard';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,7 +15,7 @@ ReactDOM.render(
     <Router>
     <Switch>
       <Route exact path="/admin">
-        <DashboardMenu />
+        <Dashboard />
       </Route>
       <Route exact path="/">
         <App />

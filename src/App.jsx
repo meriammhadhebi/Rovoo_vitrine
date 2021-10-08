@@ -13,13 +13,9 @@ import SmoothScroll from "smooth-scroll";
 import "./App.css";
 
 
-import { DashboardMenu } from "./components/dashboard_menu";
 
-const routes = [
-  {
-    path: "/admin",
-    component: DashboardMenu
-  }];
+
+
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,

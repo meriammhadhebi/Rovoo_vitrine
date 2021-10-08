@@ -5,7 +5,9 @@ export const Team = (props) => {
     <div id='team' className='text-center'>
       <div className='container'>
       
-         
+      <div className='col-md-10 col-md-offset-1 section-title'>
+          <h2>Meet The Team</h2>
+        </div>
        
          {props.data
             ? props.data.map((d, i) => (

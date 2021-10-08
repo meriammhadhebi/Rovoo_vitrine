@@ -3,7 +3,7 @@ html {
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  color: #777;
+  color: #fff;
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
@@ -210,7 +210,7 @@ hr {
   background-color: #608dfd;
 }
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 .section-title h2 {
   position: relative;
@@ -331,7 +331,8 @@ header .intro-text {
 }
 /* About Section */
 #about {
-  padding: 100px 0;
+  padding: 40px 0;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
 }
 #about h3 {
   font-size: 22px;
@@ -345,7 +346,7 @@ header .intro-text {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background-color: #333;
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -378,7 +379,7 @@ header .intro-text {
 }
 /* Services Section */
 #services {
-  padding: 100px 0;
+  padding: 50px 0;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: #fff;
 }
@@ -391,7 +392,7 @@ header .intro-text {
 #services .section-title h2::after {
   position: absolute;
   content: "";
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 1);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -414,7 +415,7 @@ header .intro-text {
   color: #fff;
 }
 #services p {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 1);
 }
 #services .service-desc {
   margin-bottom: 40px;
@@ -424,14 +425,17 @@ header .intro-text {
   max-width: 300px;
   margin: 20px;
   
+  
+  background-repeat: no-repeat;
+  object-fit: fill;
   text-align: center;
   font-family: arial;
   
 }
 
 #services .price {
-  color: grey;
-  font-size: 22px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
 }
 
 #services .card button {
@@ -451,7 +455,8 @@ header .intro-text {
 }
 /* Portfolio Section */
 #portfolio {
-  padding: 100px 0;
+  padding: 40px 0;
+  
 }
 .portfolio-item {
   margin: 1px -15px 0 -14px;
@@ -513,12 +518,11 @@ header .intro-text {
   width: 280px;
   margin: 10px;
   padding-inline: 20px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   border-radius: 50%;
   display: inline-block;
   text-align: center;
   line-height: 1.25;
-  box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.3);
+  box-shadow: inset 0px 0px 0px 3px rgba(0,0,0,0.3);
  
 }
 .testimonial {
@@ -553,10 +557,12 @@ header .intro-text {
 }
 /* Team Section */
 #team {
-  padding: 100px 0;
+  padding: 40px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to  top, #00318e 0%, #5ca9fb 100%);
+
   
 }
 #team h4 {
@@ -638,7 +644,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background-image: url("../img/homepage.jpg");
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
@@ -805,4 +811,11 @@ button {
   z-index: 0;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);}
+  .disabled-link {
+    pointer-events: none;
+  }
 
+  .parag{
+    color: #000;
+    margin-bottom: 40px;
+  }

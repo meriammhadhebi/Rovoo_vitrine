@@ -20,20 +20,20 @@
   },
   "Services": [
     {
-      "img": "/w3images/jeans3.jpg",
-      "name": "Lorem ipsum dolor",
+      "img": "../img/2.png",
+      "name": "Shark Pack",
       "price":"$19.99",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
-      "img": "/w3images/jeans3.jpg",
-      "name": "Consectetur adipiscing",
+      "img": "../img/3.png",
+      "name": "Balaine Pack",
       "price":"$19.99",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
-      "img": "/w3images/jeans3.jpg",
-      "name": "Lorem ipsum dolor",
+      "img": "../img/1.png",
+      "name": "Kraken Pack",
       "price":"$19.99",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     }
